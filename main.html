@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт Мат-меха ИЕНиМ УрФУ. Учебные планы, направления и многое другое.">
+    <title>Мат-мех УрФУ</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="math-particles" id="math-particles"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Новый набор 2025</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Математика</span>
+                    <span class="title-line accent">& Технологии</span>
+                    <span class="title-line">Будущего</span>
+                </h1>
+
+                <p class="hero-description">
+                    Где магия алгоритмов превращает формулы в реальность, а мечты — в профессию.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('programs')">
+                        <span>Выбрать направление</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <span>Узнать больше</span>
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">направлений</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">тематических сообществ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">трудоустроены на 3 курсе</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card" data-tilt>
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <div class="code-line">
+                                <span class="keyword">def</span>
+                                <span class="function">solve_future</span>():
+                            </div>
+                            <div class="code-line indent">
+                                <span class="keyword">return</span>
+                                <span class="string">"Мат-мех УрФУ"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Преимущества</span>
+                <h2 class="section-title">Почему Мат-мех?</h2>
+                <p class="section-description">
+                    Департамент с богатой историей и современными перспективами
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <h3>Фундаментальная подготовка</h3>
+                    <p>Глубокое освоение математических дисциплин и современных методов решения сложных задач</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Современные технологии</h3>
+                    <p>Изучение актуальных языков программирования, машинного обучения и анализа данных</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Востребованность</h3>
+                    <p>Высокий спрос на выпускников в IT-компаниях, научных центрах и финансовых организациях</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Активная жизнь</h3>
+                    <p>Научные конференции, хакатоны, олимпиады и студенческие мероприятия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Образование</span>
+                <h2 class="section-title">Направления подготовки</h2>
+                <p class="section-description">
+                    Выберите свой путь в мире точных наук и технологий
+                </p>
+            </div>
+
+            <div class="programs-filter">
+                <button class="filter-btn active" data-filter="all">Все направления</button>
+                <button class="filter-btn" data-filter="math">Математика</button>
+                <button class="filter-btn" data-filter="cs">Информатика</button>
+                <button class="filter-btn" data-filter="security">Безопасность</button>
+            </div>
+
+            <div class="programs-grid" id="programs-grid">
+                <!-- Programs will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ask Students Section -->
+<section class="ask-students" id="ask-students">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Сообщество</span>
+            <h2 class="section-title">Спроси студентов</h2>
+            <p class="section-description">
+                Получи ответы на свои вопросы от тех, кто уже учится на Мат-мехе.
+                Выбери направление и найди студента для общения.
+            </p>
+        </div>
+
+        <div class="students-grid">
+            <div class="student-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="student-avatar">
+                    <i class="fas fa-square-root-alt"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Математика</h3>
+                    <p class="student-course">Фундаментальная математика</p>
+                    <p class="student-description">Алгебра, анализ, геометрия и топология</p>
+                    <button class="student-contact" onclick="openStudentsModal('math')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+                        <div class="student-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="student-avatar">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Механика и математическое моделирование</h3>
+                    <p class="student-course">Математическое моделирование</p>
+                    <p class="student-description">Численные методы, компьютерное моделирование</p>
+                    <button class="student-contact" onclick="openStudentsModal('meh-math')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="student-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="student-avatar">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Прикладная математика</h3>
+                    <p class="student-course">Математическое моделирование</p>
+                    <p class="student-description">Численные методы, компьютерное моделирование</p>
+                    <button class="student-contact" onclick="openStudentsModal('applied-math')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="student-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="student-avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Математика и компьютерные науки</h3>
+                    <p class="student-course">Математика + IT</p>
+                    <p class="student-description">Программирование, алгоритмы, машинное обучение</p>
+                    <button class="student-contact" onclick="openStudentsModal('cs-math')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="student-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="student-avatar">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Компьютерная безопасность</h3>
+                    <p class="student-course">Информационная безопасность</p>
+                    <p class="student-description">Криптография, защита информации, этичный хакинг</p>
+                    <button class="student-contact" onclick="openStudentsModal('security')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="student-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="student-avatar">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="student-info">
+                    <h3>Фундаментальная информатика и ИТ</h3>
+                    <p class="student-course">Компьютерные науки</p>
+                    <p class="student-description">Искусственный интеллект, анализ данных</p>
+                    <button class="student-contact" onclick="openStudentsModal('fiit')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="student-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="student-avatar">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="student-info">
+                    <h3>МОАИС</h3>
+                    <p class="student-course">Разработка ПО</p>
+                    <p class="student-description">Системное администрирование, веб-разработка</p>
+                    <button class="student-contact" onclick="openStudentsModal('moais')">
+                        <i class="fab fa-telegram"></i>
+                        <span>Написать в Telegram</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="students-footer">
+            <p>Не нашли свое направление? Присоединяйтесь к общему чату абитуриентов:</p>
+            <a href="https://t.me/mmpriemchat" target="_blank" class="btn btn-primary">
+                <i class="fab fa-telegram"></i>
+                <span>Общий чат абитуриентов</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Помощь</span>
+                <h2 class="section-title">Частые вопросы</h2>
+                <p class="section-description">
+                    Ответы на самые популярные вопросы абитуриентов
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Есть ли заочная форма обучения?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>На мат-мехе доступна только очная форма обучения. Это обеспечивает максимальное качество образования и тесное взаимодействие с преподавателями.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Сложно ли учиться после обычной школы?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Преподаватели понимают разный уровень подготовки студентов и помогают адаптироваться. При желании учиться и усердии все получится!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли совмещать учебу с работой?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>На старших курсах многие студенты успешно совмещают учебу с работой в IT-компаниях. На младших курсах рекомендуется сосредоточиться на учебе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Контакты</span>
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-description">
+                    Мы всегда готовы ответить на ваши вопросы
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контакты</h2>
+                    <p>Свяжитесь с нами для получения дополнительной информации</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Адрес</strong>
+                            <p>г. Екатеринбург, ул. Тургенева, 4<br>
+                            Приемная комиссия: ул. Мира, 19, 3 этаж</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Время работы</strong>
+                            <p>Пн-Пт: 10:00–17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://vk.com/mmabiturient" target="_blank" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/mmpriemchat" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-visual">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <span class="status-dot"></span>
+                            <span>Онлайн консультация</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Задайте вопрос студентам и получите ответ от тех, кто уже учится на факультете</p>
+                            <div class="code-snippet" style="margin-bottom: var(--space-md); font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-secondary);">
+                                <div class="code-line">
+                                    <span style="color: #3b82f6;">function</span> <span style="color: #60a5fa;">askQuestion</span>() {
+                                </div>
+                                <div class="code-line indent" style="padding-left: var(--space-md);">
+                                    <span style="color: #3b82f6;">return</span> <span style="color: #06b6d4;">"Получите ответ от студентов Мат-меха"</span>;
+                                </div>
+                                <div class="code-line">}</div>
+                            </div>
+                            <a href="https://t.me/mmpriemchat" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-telegram"></i>
+                                <span>Написать в Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <span class="math-symbol">∑</span>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title">Мат-мех УрФУ</span>
+                        <span class="brand-subtitle">Департамент математики, механики и компьютерных наук</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <a href="#about">О департаменте</a>
+                        <a href="#programs">Направления</a>
+                        <a href="#faq">Вопросы</a>
+                        <a href="#contact">Контакты</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Социальные сети</h4>
+                        <a href="https://vk.com/mmabiturient" target="_blank">ВКонтакте</a>
+                        <a href="https://t.me/mmpriemchat" target="_blank">Telegram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Мат-мех УрФУ. Сайт разработан студентами департамента.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Program Modal -->
+    <div class="program-modal" id="program-modal">
+        <div class="modal-overlay" onclick="closeProgramModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Учебный план</h2>
+                <button class="modal-close" onclick="closeProgramModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-curriculum" class="curriculum-content">
+                    <!-- Curriculum will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Students Modal -->
+<div class="students-modal" id="students-modal">
+    <div class="modal-overlay" onclick="closeStudentsModal()"></div>
+    <div class="students-modal-content">
+        <div class="students-modal-header">
+            <div class="modal-phone-frame">
+                <div class="phone-header">
+                    <div class="phone-status">
+                        <span class="time">14:30</span>
+                        <div class="phone-indicators">
+                            <i class="fas fa-signal"></i>
+                            <i class="fas fa-wifi"></i>
+                            <i class="fas fa-battery-three-quarters"></i>
+                        </div>
+                    </div>
+                    <div class="chat-header-info">
+                        <h3 id="modal-program-title">Студенты направления</h3>
+                        <span class="online-status">
+                            <span class="status-dot"></span>
+                            Онлайн
+                        </span>
+                    </div>
+                    <button class="modal-close" onclick="closeStudentsModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="students-modal-body">
+            <div id="students-list" class="students-list">
+                <!-- Students will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
