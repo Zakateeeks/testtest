@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация для студентов - Мат-мех УрФУ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="first_course_css.css">
+</head>
+<body>
+<!-- Background Effects -->
+<div class="background-effects">
+    <div class="math-particles" id="math-particles"></div>
+    <div class="floating-shapes"></div>
+</div>
+
+
+
+<!-- Connect with Curators Section -->
+<section class="connect-curators-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-users"></i>
+                <span>Связь с кураторами</span>
+            </div>
+            <h2>Найдите своего куратора</h2>
+            <p>Кураторы помогут вам адаптироваться к студенческой жизни и добавят в чат группы</p>
+        </div>
+
+        <div class="connect-hero">
+            <div class="connect-visual">
+                <div class="orbital-system">
+                    <div class="central-hub">
+                        <div class="hub-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="energy-rings">
+                            <div class="energy-ring ring-1"></div>
+                            <div class="energy-ring ring-2"></div>
+                            <div class="energy-ring ring-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="orbit orbit-1">
+                        <div class="orbit-path"></div>
+                        <div class="curator-satellite sat-1">
+                            <img src="images/students/tanyaezh.jpg?height=50&width=50&text=👨‍🎓" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                        <div class="curator-satellite sat-2">
+                            <img src="images/students/poliwer.jpg?height=50&width=50&text=👩‍🎓" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="orbit orbit-2">
+                        <div class="orbit-path"></div>
+                        <div class="curator-satellite sat-3">
+                            <img src="images/students/kostyafiit.jpg?height=45&width=45&text=👨‍💻" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                        <div class="curator-satellite sat-4">
+                            <img src="images/students/polugus.jpeg?height=45&width=45&text=👩‍💻" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                        <div class="curator-satellite sat-5">
+                            <img src="images/students/zakateeek.jpg?height=45&width=45&text=👨‍🔬" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="orbit orbit-3">
+                        <div class="orbit-path"></div>
+                        <div class="curator-satellite sat-6">
+                            <img src="images/students/karina.jpeg?height=40&width=40&text=👩‍🔬" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                        <div class="curator-satellite sat-7">
+                            <img src="images/students/ronodar.jpg?height=40&width=40&text=👨‍🎨" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                        <div class="curator-satellite sat-8">
+                            <img src="images/students/inessa.jpg?height=40&width=40&text=👩‍🎨" alt="Куратор">
+                            <div class="satellite-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="floating-particles">
+                        <div class="particle particle-1"></div>
+                        <div class="particle particle-2"></div>
+                        <div class="particle particle-3"></div>
+                        <div class="particle particle-4"></div>
+                        <div class="particle particle-5"></div>
+                        <div class="particle particle-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connect-content">
+                <div class="hero-text">
+                    <h3>Связь с кураторами</h3>
+                    <p>Каждый куратор — это опытный студент старших курсов, который поможет вам адаптироваться к университетской жизни, ответит на вопросы и добавит в групповой чат.</p>
+                </div>
+
+                <button class="find-curator-btn" onclick="openCuratorsPopup()">
+                    <div class="btn-content">
+                        <i class="fas fa-search"></i>
+                        <span>Найти куратора группы</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </button>
+
+                <div class="quick-info">
+                    <div class="info-item">
+                        <i class="fab fa-telegram"></i>
+                        <span>Прямая связь в Telegram</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>Добавление в групповой чат</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Помощь в адаптации</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Information Section -->
+<section class="events-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-star"></i>
+                <span>Мероприятия</span>
+            </div>
+            <h2>Традиционные события департамента</h2>
+            <p>Узнайте больше о наших знаковых мероприятиях</p>
+        </div>
+
+        <div class="events-grid">
+            <div class="event-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="event-background">
+                    <div class="event-pattern"></div>
+                </div>
+                <div class="event-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="event-content">
+                    <div class="event-badge">Сентябрь</div>
+                    <h3>ДПММ</h3>
+                    <h4>День первокурсника мат-меха</h4>
+                    <p>Месяц крутых мероприятий для знакомства с городом, студентами, кураторами и учебным корпусом.</p>
+                    <div class="event-stats">
+                        <div class="event-stat">
+                            <i class="fas fa-users"></i>
+                            <span>300+ участников</span>
+                        </div>
+                        <div class="event-stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Месяц</span>
+                        </div>
+                    </div>
+                    <button class="event-btn" onclick="openPopup('dpmm')">
+                        <span>Подробнее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="event-background">
+                    <div class="event-pattern"></div>
+                </div>
+                <div class="event-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="event-content">
+                    <div class="event-badge">Апрель</div>
+                    <h3>ДММ</h3>
+                    <h4>День математика и механика</h4>
+                    <p>Почти 2 месяца крутых мероприятий!</p>
+                    <div class="event-stats">
+                        <div class="event-stat">
+                            <i class="fas fa-music"></i>
+                            <span>Концерт</span>
+                        </div>
+                        <div class="event-stat">
+                            <i class="fas fa-trophy"></i>
+                            <span>Мерч</span>
+                        </div>
+                    </div>
+                    <button class="event-btn" onclick="openPopup('dmm')">
+                        <span>Подробнее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="event-background">
+                    <div class="event-pattern"></div>
+                </div>
+                <div class="event-icon">
+                    <i class="fas fa-snowflake"></i>
+                </div>
+                <div class="event-content">
+                    <div class="event-badge">Февраль</div>
+                    <h3>ЗМШ</h3>
+                    <h4>Зимняя математическая школа</h4>
+                    <p>Образовательное мероприятие с углубленным изучением математики и научными проектами.</p>
+                    <div class="event-stats">
+                        <div class="event-stat">
+                            <i class="fas fa-brain"></i>
+                            <span>Наука</span>
+                        </div>
+                        <div class="event-stat">
+                            <i class="fas fa-mountain"></i>
+                            <span>За городом</span>
+                        </div>
+                    </div>
+                    <button class="event-btn" onclick="openPopup('zmsh')">
+                        <span>Подробнее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- First Year Guide Section -->
+<section class="guide-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-compass"></i>
+                <span>Навигация</span>
+            </div>
+            <h2>Гид первокурсника</h2>
+            <p>Все необходимое для успешного начала учёбы</p>
+        </div>
+
+        <div class="guide-grid">
+            <div class="guide-card interactive" data-aos="fade-up" data-aos-delay="100" onclick="openPopup('faq')">
+                <div class="guide-background">
+                    <div class="guide-pattern"></div>
+                </div>
+                <div class="guide-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="guide-content">
+                    <h3>FAQ</h3>
+                    <p>Ответы на часто задаваемые вопросы</p>
+                    <div class="guide-stats">
+                        <span class="guide-count">Ответы на вопросов</span>
+                    </div>
+                </div>
+                <div class="guide-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="guide-card interactive" data-aos="fade-up" data-aos-delay="200" onclick="openPopup('dormitories')">
+                <div class="guide-background">
+                    <div class="guide-pattern"></div>
+                </div>
+                <div class="guide-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="guide-content">
+                    <h3>Общежития</h3>
+                    <p>Информация о студенческих общежитиях</p>
+                    <div class="guide-stats">
+                        <span class="guide-count">4 общежития</span>
+                    </div>
+                </div>
+                <div class="guide-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="guide-card interactive" data-aos="fade-up" data-aos-delay="300" onclick="openPopup('studies')">
+                <div class="guide-background">
+                    <div class="guide-pattern"></div>
+                </div>
+                <div class="guide-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="guide-content">
+                    <h3>Учеба</h3>
+                    <p>Организация учебного процесса</p>
+                    <div class="guide-stats">
+                        <span class="guide-count">Полный гид</span>
+                    </div>
+                </div>
+                <div class="guide-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="guide-card interactive" data-aos="fade-up" data-aos-delay="400" onclick="openPopup('city')">
+                <div class="guide-background">
+                    <div class="guide-pattern"></div>
+                </div>
+                <div class="guide-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="guide-content">
+                    <h3>Гид по Екатеринбургу</h3>
+                    <p>Полезные места и локации в городе</p>
+                    <div class="guide-stats">
+                        <span class="guide-count">20+ мест</span>
+                    </div>
+                </div>
+                <div class="guide-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="guide-card interactive" data-aos="fade-up" data-aos-delay="500" onclick="openPopup('links')">
+                <div class="guide-background">
+                    <div class="guide-pattern"></div>
+                </div>
+                <div class="guide-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <div class="guide-content">
+                    <h3>Полезные ссылки</h3>
+                    <p>Важные ресурсы и сервисы</p>
+                    <div class="guide-stats">
+                        <span class="guide-count">Скоро!</span>
+                    </div>
+                </div>
+                <div class="guide-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Universal Modal -->
+<div class="modal" id="universal-modal">
+    <div class="modal-overlay" onclick="closePopup()"></div>
+    <div class="modal-content" id="modal-content">
+        <!-- Content will be dynamically inserted -->
+    </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">
+    <div class="toast-content">
+        <i class="toast-icon"></i>
+        <span class="toast-message"></span>
+    </div>
+    <button class="toast-close" onclick="closeToast()">
+        <i class="fas fa-times"></i>
+    </button>
+</div>
+
+<script src="first_course_js.js"></script>
+</body>
+</html>
